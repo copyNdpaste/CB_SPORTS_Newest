@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }*/
     public void onButton8Clicked(View V){ //경기 일정 사이트로 넘어감
-        Intent intent = new Intent(this, TabActivity.class);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://naver.com"));
         startActivity(intent);
     }
     public void onButton9Clicked(View V){ //경기 일정 사이트로 넘어감
