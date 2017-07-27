@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp">
+
+    <item
+        android:id="@+id/kakao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="카카오톡으로 앱 공유!"/>
+
+    <item
+        android:id="@+id/kakaoweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="전국체전 사이트 알리기"/>
+
+    <item
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="페이스북"/>
+
+    <item
+        android:id="@+id/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="인스타그램" />
+
+    <item
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="트위터" />
+</menu>

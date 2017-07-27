@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="알림마당">
+            <menu>
+                <item android:title="공지사항" android:icon="@drawable/weight_lifting" android:id="@+id/notice"/>
+                <item android:title="대회뉴스" android:icon="@drawable/swimming" android:id="@+id/news"/>
+                <item android:title="대회소개" android:icon="@drawable/soccer" android:id="@+id/introduce"/>
+            </menu>
+        </item>
+        <item android:title="경기정보">
+            <menu>
+                <item android:title="경기소개" android:icon="@drawable/basketball" android:id="@+id/game_introduce"/>
+                <item android:title="경기일정" android:icon="@drawable/judo" android:id="@+id/game_date"/>
+                <item android:title="경기장 소개" android:icon="@drawable/triathlon" android:id="@+id/stadium"/>
+                <item android:title="종합순위" android:icon="@drawable/modern_pentathlon" android:id="@+id/total_ranking"/>
+            </menu>
+        </item>
+        <item android:title="금강산도 식후경">
+            <menu>
+                <item android:title="경기장 주변 맛집/숙박" android:icon="@drawable/food_lodge" android:id="@+id/food_lodge"/>
+            </menu>
+        </item>
+        <item android:title="핫플레이스">
+            <menu>
+                <item android:title="충북의 관광명소" android:icon="@drawable/fire" android:id="@+id/hotplace"/>
+            </menu>
+        </item>
+        <item android:title="안녕하세요 고객님">
+            <menu>
+                <item android:title="고객센터" android:icon="@drawable/service_call" android:id="@+id/service_call"/>
+            </menu>
+        </item>
+    </group>
+</menu>
