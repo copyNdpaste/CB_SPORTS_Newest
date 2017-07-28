@@ -56,13 +56,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView5"
-        app:srcCompat="@drawable/mascot1" />
+        app:srcCompat="@mipmap/mascot1" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="170dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/emblem1"
+        app:srcCompat="@mipmap/emblem1"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -72,7 +72,7 @@
         android:layout_width="160dp"
         android:layout_height="230dp"
         android:layout_marginTop="27dp"
-        app:srcCompat="@drawable/poster1"
+        app:srcCompat="@mipmap/poster1"
         android:layout_below="@+id/imageView6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -85,7 +85,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageView7"
-        app:srcCompat="@drawable/poster2" />
+        app:srcCompat="@mipmap/poster2" />
 
     <ImageView
         android:id="@+id/imageView9"
