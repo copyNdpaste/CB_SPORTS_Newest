@@ -162,13 +162,9 @@ public class MainActivity extends AppCompatActivity
     public void onButton1Clicked(View V){ //대회 소개 페이지로 넘어감
         Intent intent = new Intent(this, TabActivity.class);
         startActivity(intent);
-    }/*
-    public void onButton1Clicked(View V){ //대회 소개 페이지로 넘어감
-        Intent intent = new Intent(this, TabActivity.class);
-        startActivity(intent);
-    }*/
-    public void onButton8Clicked(View V){ //경기 일정 사이트로 넘어감
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://naver.com"));
+    }
+    public void onButton8Clicked(View V){ //경기 소개 사이트로 넘어감
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectSportList.do?key=82"));
         startActivity(intent);
     }
     public void onButton9Clicked(View V){ //경기 일정 사이트로 넘어감
@@ -277,8 +273,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.introduce) {
             Toast.makeText(this, "대회소개",Toast.LENGTH_SHORT).show();
-            //Intent intent = new Intent(this, TabActivity.class);
-           // startActivity(intent);
+            Intent intent = new Intent(this, TabActivity.class);
+            startActivity(intent);
         } else if (id == R.id.game_introduce) {
             Toast.makeText(this, "경기 소개",Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectSportList.do?key=82"));
