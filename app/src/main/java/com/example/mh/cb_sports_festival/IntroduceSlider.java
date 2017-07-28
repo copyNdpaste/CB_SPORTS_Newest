@@ -12,7 +12,7 @@ public class IntroduceSlider extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_introduce_slider);
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         adapter = new Slider(this);
         viewPager.setAdapter(adapter);

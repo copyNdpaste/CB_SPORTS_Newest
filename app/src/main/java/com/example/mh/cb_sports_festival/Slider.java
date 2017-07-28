@@ -1,7 +1,6 @@
 package com.example.mh.cb_sports_festival;
 
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +23,7 @@ public class Slider extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return (view == (ConstraintLayout)object);
+        return (view == (LinearLayout)object);
     }
 
     @Override
