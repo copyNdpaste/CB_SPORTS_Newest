@@ -277,8 +277,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.introduce) {
             Toast.makeText(this, "대회소개",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, TabActivity.class);
-            startActivity(intent);
+            //Intent intent = new Intent(this, TabActivity.class);
+           // startActivity(intent);
         } else if (id == R.id.game_introduce) {
             Toast.makeText(this, "경기 소개",Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectSportList.do?key=82"));
@@ -305,6 +305,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.service_call) {
             Toast.makeText(this, "고객센터",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this,ServiceCall.class);
+            startActivity(intent);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

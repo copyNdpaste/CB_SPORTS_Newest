@@ -33,7 +33,7 @@
             android:onClick="onButton15Clicked"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-            app:srcCompat="@drawable/customerservice" />
+            app:srcCompat="@drawable/customerservice_bigger" />
 
         <ImageButton
             android:id="@+id/imageButton8"
@@ -50,7 +50,7 @@
             app:layout_constraintLeft_toRightOf="@+id/imageButton6"
             app:layout_constraintRight_toLeftOf="@+id/imageButton9"
             app:layout_constraintTop_toBottomOf="@+id/viewPager"
-            app:srcCompat="@drawable/introduce" />
+            app:srcCompat="@drawable/sports_bigger" />
 
         <ImageButton
             android:id="@+id/imageButton9"
@@ -63,7 +63,7 @@
             android:onClick="onButton9Clicked"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewPager"
-            app:srcCompat="@drawable/schedule" />
+            app:srcCompat="@drawable/schedule_bigger" />
 
         <ImageButton
             android:id="@+id/imageButton6"
@@ -116,7 +116,7 @@
             android:onClick="onButton13Clicked"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-            app:srcCompat="@drawable/ranking" />
+            app:srcCompat="@drawable/ranking_bigger" />
 
         <ImageButton
             android:id="@+id/imageView14"
@@ -131,7 +131,7 @@
             app:layout_constraintLeft_toRightOf="@+id/imageView13"
             app:layout_constraintRight_toLeftOf="@+id/imageButton15"
             app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-            app:srcCompat="@drawable/lodgerestaurant" />
+            app:srcCompat="@drawable/lodgerestaurant_bigger" />
 
         <TabHost
             android:id="@+id/tabHost"
@@ -324,7 +324,7 @@
             android:id="@+id/imageView10"
             android:layout_width="180dp"
             android:layout_height="70dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -340,9 +340,7 @@
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_marginBottom="24dp"
             android:layout_marginLeft="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:menu_animationDelayPerItem="55"
             app:menu_backgroundColor="@android:color/transparent"
@@ -368,23 +366,25 @@
             app:menu_labels_textSize="15sp"
             app:menu_openDirection="up"
             android:layout_marginRight="8dp"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp">
 
                 <com.github.clans.fab.FloatingActionButton
                     android:id="@+id/floating_kakaotalk"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="onkakaoClicked"
-                    android:src="@mipmap/kakaotalk"
+                    android:src="@mipmap/kakaoapp100"
                     app:fab_size="mini"
-                    app:menu_fab_label="전국체전 알리기" />
+                    />
 
                 <com.github.clans.fab.FloatingActionButton
                     android:id="@+id/floating_kakaotalkweb"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:onClick="onkakaowebClicked"
-                    android:src="@mipmap/kakaotalk"
+                    android:src="@mipmap/kakaoweb100"
                     app:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -392,7 +392,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:onClick="onfacebookClicked"
-                    android:src="@mipmap/facebook"
+                    android:src="@mipmap/facebook100"
                     app:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -400,7 +400,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:onClick="oninstagramClicked"
-                    android:src="@mipmap/instagram"
+                    android:src="@mipmap/instagram100"
                     app:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -408,7 +408,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:onClick="ontwitterClicked"
-                    android:src="@mipmap/twitter"
+                    android:src="@mipmap/twitter100"
                     app:fab_size="mini" />
 
         </com.github.clans.fab.FloatingActionMenu>
