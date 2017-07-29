@@ -11,21 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".TabActivity"
             android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_homeand_navigation"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+.
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -36,6 +45,7 @@
                     android:host="@string/kakaolink_host"
                     android:scheme="@string/kakao_scheme" />
             </intent-filter>
+
         </activity>
 
         <meta-data
@@ -50,9 +60,13 @@
             android:authorities="com.facebook.app.FacebookContentProvider1485345334820436"
             android:exported="true" />
 
-        <activity android:name=".ServiceCall" />
-        <activity android:name=".IntroduceSlider" />
-        <activity android:name=".Slider"></activity>
+        <activity android:name=".ServiceCall"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Introduce"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
     </application>
 
 </manifest>

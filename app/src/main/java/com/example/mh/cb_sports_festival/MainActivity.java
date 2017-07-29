@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
     public void onButton8Clicked(View V){ //경기 소개 사이트로 넘어감
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectSportList.do?key=82"));
+        Intent intent = new Intent(this, Introduce.class);
         startActivity(intent);
     }
     public void onButton9Clicked(View V){ //경기 일정 사이트로 넘어감
@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.game_introduce) {
             Toast.makeText(this, "경기 소개",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectSportList.do?key=82"));
+            Intent intent = new Intent(this, Introduce.class);
             startActivity(intent);
         } else if (id == R.id.game_date) {
             Toast.makeText(this, "경기 일정",Toast.LENGTH_SHORT).show();

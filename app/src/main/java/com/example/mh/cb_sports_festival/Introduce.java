@@ -13,23 +13,32 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
+import android.widget.SimpleExpandableListAdapter;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionMenu;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-
-public class ServiceCall extends AppCompatActivity
+public class Introduce extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    ViewPager viewPager;
+
+    FloatingActionMenu materialDesignFAM;
+    com.github.clans.fab.FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3, floatingActionButton4, floatingActionButton5;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_call_navigation);
-
-
+        setContentView(R.layout.activity_introduce_navigation);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -44,8 +53,68 @@ public class ServiceCall extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
 
+
+
+
+
+
+
+        String[] arrProv = new String[] {"ㄱ", "ㄴ", "ㄷ","ㄹ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"};
+
+        String[][] arrCity = new String[][]{
+                {"검도", "골프", "궁도","근대5종"},
+                {"농구"},
+                {"당구", "댄스스포츠"},
+                {"럭비","레슬링","롤러"},
+                {"바둑","배구","배드민턴","보디빌딩","복싱","볼링"},
+                {"사격","산악","세일링","세팍타크로","수상스키","수영","스쿼시","승마","씨름"},
+                {"야구소프트볼(야구)","양궁","역도","우슈","유도","육상"},
+                {"자전거","정구","조정"},
+                {"철인3종","체조","축구"},
+                {"카누"},
+                {"탁구","태권도","택견","테니스"},
+                {"펜싱","핀수영"},
+                {"하키","핸드볼"}
+
+        };
+
+        List<Map<String, String>> provData
+                =new ArrayList<>();
+        List<List<Map<String, String>>> cityData
+                =new ArrayList<>();
+
+        for(int i=0; i<arrProv.length; i++) {
+            Map<String, String> prov =  new HashMap<>();
+            prov.put("prov",arrProv[i]);
+            provData.add(prov);
+
+            List<Map<String,String>> cityes
+                    =new ArrayList<>();
+            for (int j=0; j<arrCity[i].length; j++){
+                Map<String, String> city
+                        =new HashMap<>();
+                city.put("city", arrCity[i][j]);
+                cityes.add(city);
+            }//데이터
+            cityData.add(cityes);
+        }
+        ExpandableListAdapter adapter
+                =new SimpleExpandableListAdapter(
+                this,
+                provData,
+                android.R.layout.simple_expandable_list_item_1,
+                new String[] {"prov"},
+                new int[] {android.R.id.text1},
+                cityData,
+                android.R.layout.simple_expandable_list_item_1,
+                new String[] {"city"},
+                new int[] {android.R.id.text1}
+        );
+        ExpandableListView expandableListView
+                = (ExpandableListView)findViewById(R.id.expandableListView);
+        expandableListView.setAdapter(adapter);
+    }
 
 
 
@@ -115,31 +184,10 @@ public class ServiceCall extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
 
 
+    }
 
-
-    public void call1Clicked(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:043-220-5211"));//전국체전 추진단 사무실 043-220-5211~4
-        startActivity(intent);
-    }
-    public void call2Clicked(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:043-220-5212"));//전국체전 추진단 사무실 043-220-5211~4
-        startActivity(intent);
-    }
-    public void call3Clicked(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:043-220-5213"));//전국체전 추진단 사무실 043-220-5211~4
-        startActivity(intent);
-    }
-    public void call4Clicked(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:043-220-5214"));//전국체전 추진단 사무실 043-220-5211~4
-        startActivity(intent);
-    }
-    public void call5Clicked(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:043-220-4004"));//충북 나드리
-        startActivity(intent);
-    }
 
 
 
@@ -151,5 +199,7 @@ public class ServiceCall extends AppCompatActivity
 
 
 }
+
+
 
 
