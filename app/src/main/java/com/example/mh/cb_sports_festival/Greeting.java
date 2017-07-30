@@ -10,7 +10,7 @@ import android.view.ViewGroup;
  * Created by MH on 2017-07-06.
  */
 
-public class Greeting extends Fragment{
+public class Greeting extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -18,3 +18,5 @@ public class Greeting extends Fragment{
         return rootView;
     }
 }
+
+

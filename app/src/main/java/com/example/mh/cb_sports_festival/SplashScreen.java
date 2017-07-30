@@ -18,10 +18,10 @@ public class SplashScreen extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
        // setContentView(R.layout.main_imagexml);
         EasySplashScreen config = new EasySplashScreen(SplashScreen.this)
-                .withFullScreen()
+                //.withFullScreen()
                 .withTargetActivity(MainActivity.class)
                 .withSplashTimeOut(1000)//나중에 2,3 초로 바꾸기
-                .withBackgroundColor(Color.parseColor("#ffffffff")) //스플래시 배경 색
+                .withBackgroundColor(Color.parseColor("#00000000")) //스플래시 배경 색
                 .withHeaderText("모두의 체전에 오신 것을 환영합니다.")
                 //.withBeforeLogoText("심명훈")
                 .withLogo(R.mipmap.poster)
