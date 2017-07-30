@@ -9,31 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
 >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="대회개요"
-        android:textSize="24sp" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="400dp"
-        android:layout_height="180dp"
-        app:srcCompat="@mipmap/outline1"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        app:srcCompat="@mipmap/outline2"
-        android:layout_marginBottom="136dp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@mipmap/overview2" />
+
 </RelativeLayout>

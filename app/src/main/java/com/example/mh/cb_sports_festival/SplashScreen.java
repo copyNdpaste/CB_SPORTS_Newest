@@ -22,11 +22,11 @@ public class SplashScreen extends AppCompatActivity {
                 .withTargetActivity(MainActivity.class)
                 .withSplashTimeOut(1000)//나중에 2,3 초로 바꾸기
                 .withBackgroundColor(Color.parseColor("#00000000")) //스플래시 배경 색
-                .withHeaderText("모두의 체전에 오신 것을 환영합니다.")
+               // .withHeaderText("모두의 체전에 오신 것을 환영합니다.")
                 //.withBeforeLogoText("심명훈")
-                .withLogo(R.mipmap.poster)
-                .withAfterLogoText("제98회 전국체육대회")
-                .withFooterText("Copyright 2017");
+                .withLogo(R.drawable.poster);
+                //.withAfterLogoText("제98회 전국체육대회")
+                //.withFooterText("Copyright 2017");
         //색 지정
        // config.getHeaderTextView().setTextColor(android.graphics.Color.WHITE);
       //  config.getFooterTextView().setTextColor(android.graphics.Color.WHITE);

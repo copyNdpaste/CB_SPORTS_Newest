@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
     public void notice3Clicked(View V) { //공지3클릭
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectBbsNttView.do?key=98&bbsNo=1&nttNo=581&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode="));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectBbsNttView.do?key=98&bbsNo=1&nttNo=523&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode="));
         startActivity(intent);
     }
     public void notice4Clicked(View V) { //공지4클릭
@@ -215,8 +215,8 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectBbsNttView.do?key=99&bbsNo=21&nttNo=481&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode="));
         startActivity(intent);
     }
-    public void news4Clicked(View V) { //뉴스4클릭
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectBbsNttView.do?key=99&bbsNo=21&nttNo=481&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode="));
+    public void news4Clicked(View V) { //뉴스4클릭 예성여고...
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://2017sports.chungbuk.go.kr/www/selectBbsNttView.do?key=99&bbsNo=21&nttNo=465&searchCtgry=&searchCnd=SJ&searchKrwd=%EC%98%88%EC%84%B1%EC%97%AC%EA%B3%A0&pageIndex=1&integrDeptCode="));
         startActivity(intent);
     }
     public void news5Clicked(View V) { //뉴스5클릭

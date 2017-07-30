@@ -115,7 +115,7 @@ public class Introduce extends AppCompatActivity
 
         });
 
-        String[] groups = { "ㄱ", "ㄴ", "ㄷ","ㄹ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅎ"}; //눈에 보이는 곳
+        String[] groups = { "ㄱ", "ㄴ", "ㄷ","ㄹ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"}; //눈에 보이는 곳
         String[][] children = {
                 {"검도", "골프", "궁도","근대5종"},
                 {"농구"},
